@@ -1,17 +1,15 @@
 package example;
 
-import arc.*;
-import arc.util.*;
-import mindustry.*;
-import mindustry.content.*;
-import mindustry.game.EventType.*;
-import mindustry.gen.*;
-import mindustry.mod.*;
-import mindustry.ui.dialogs.*;
+import arc.Core;
+import arc.Events;
+import arc.util.Log;
+import arc.util.Time;
+import mindustry.game.EventType.ClientLoadEvent;
+import mindustry.mod.Mod;
+import mindustry.ui.dialogs.BaseDialog;
 
-public class ExampleJavaMod extends Mod{
-
-    public ExampleJavaMod(){
+public class ExampleJavaMod extends Mod {
+    public ExampleJavaMod() {
         Log.info("Loaded ExampleJavaMod constructor.");
 
         //listen for game load event
@@ -29,8 +27,7 @@ public class ExampleJavaMod extends Mod{
     }
 
     @Override
-    public void loadContent(){
+    public void loadContent() {
         Log.info("Loading some example content.");
     }
-
 }
